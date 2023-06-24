@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Viaoda+Libre&display=swap");
+
+/* cards */
+
+.container__card {
+    max-width: 1000px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    position: relative;
+    margin: 80px;
+    font-family: "Poppins", sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+.card:hover .info__description {
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card:hover .icon {
+    margin-top: -110px;
+    border-radius: 20px 20px 0px 0px;
+    background: #72c0ff;
+}
+
+.card:hover .icon .card-img {
+    background: #72c0ff;
+}
+
+.icon {
+    width: 100%;
+    height: 400px;
+    background: #c5c5c5;
+    color: #b5ecf0;
+    font-size: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.icon .card-img {
+    background: #d7e3eb;
+    max-height: 220px;
+    max-width: 280px;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+.info__description {
+    width: 100%;
+    height: 220px;
+    color: #474747;
+    background: #b4cde2;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.info__description p {
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.info__description input {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: #789ce0;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+}
+
+.info__description input:hover {
+    box-shadow: 1px 1px 30px -5px #20202070;
+}
+
+/* fin de cards */
